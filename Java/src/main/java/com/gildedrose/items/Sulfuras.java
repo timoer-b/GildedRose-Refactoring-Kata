@@ -15,10 +15,4 @@ public class Sulfuras extends AbstractItem {
     public void updateSellIn() {
         // Sulfuras never changes
     }
-
-    @Override
-    public void updateQualityAndSellIn() {
-        this.updateSellIn();
-        this.updateQuality();
-    }
 }

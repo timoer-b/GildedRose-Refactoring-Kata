@@ -12,16 +12,4 @@ public class AgedBrie extends AbstractItem {
             this.quality++;
         }
     }
-
-    @Override
-    public void updateSellIn() {
-        this.sellIn--;
-    }
-
-    @Override
-    public void updateQualityAndSellIn() {
-        this.updateSellIn();
-        this.updateQuality();
-    }
-
 }

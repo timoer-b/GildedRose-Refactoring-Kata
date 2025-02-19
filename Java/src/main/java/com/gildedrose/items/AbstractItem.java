@@ -10,8 +10,13 @@ public abstract class AbstractItem extends Item {
     
     public abstract void updateQuality();
 
-    public abstract void updateSellIn();
+    public void updateSellIn() {
+        this.sellIn--;
+    }
 
-    public abstract void updateQualityAndSellIn();
+    public void updateQualityAndSellIn() {
+        this.updateSellIn();
+        this.updateQuality();
+    }
 
 }

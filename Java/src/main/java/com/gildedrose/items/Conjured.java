@@ -16,15 +16,4 @@ public class Conjured extends AbstractItem {
             this.quality = 0;
         }
     }
-
-    @Override
-    public void updateSellIn() {
-        this.sellIn--;
-    }
-
-    @Override
-    public void updateQualityAndSellIn() {
-        this.updateSellIn();
-        this.updateQuality();
-    }
 }

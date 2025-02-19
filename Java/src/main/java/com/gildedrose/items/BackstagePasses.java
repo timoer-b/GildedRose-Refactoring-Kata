@@ -22,15 +22,4 @@ public class BackstagePasses extends AbstractItem {
             this.quality = 50;
         }
     }
-
-    @Override
-    public void updateSellIn() {
-        this.sellIn--;
-    }
-
-    @Override
-    public void updateQualityAndSellIn() {
-        this.updateSellIn();
-        this.updateQuality();
-    }
 }
