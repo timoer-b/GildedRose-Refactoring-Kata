@@ -1,4 +1,5 @@
 package com.gildedrose.items;
+
 public enum ItemEnum {
     AGED_BRIE("Aged Brie"),
     SULFURAS("Sulfuras, Hand of Ragnaros"),
@@ -10,5 +11,9 @@ public enum ItemEnum {
 
     ItemEnum(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }
